@@ -7,6 +7,7 @@ package org.nutriaderio.demojpa;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
@@ -21,6 +22,7 @@ public class Fool implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue()
     private Long id;
     private String dato1;
     @Temporal(TemporalType.TIMESTAMP)
